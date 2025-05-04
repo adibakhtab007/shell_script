@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# -------------------------------------------
+# | Script Created By: Adib Akhtab Faruquee |
+# | Script Created at: 04-05-2025 09:00 AM  |
+# -------------------------------------------
+
 # Prompt for log output path with a demo
 echo "Enter full path to save the filtered output log (e.g., /home/adib/FILE.log):"
 read -p "OUTPUT_LOG_PATH: " OUTPUT_LOG_PATH
