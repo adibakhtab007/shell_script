@@ -71,15 +71,12 @@ Monitors the response from a specified API and sends an email if it's down or re
 Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 
 <details> <summary>📋 Steps Performed</summary>
- 1. Install dependencies (gcc, make, libxml2, etc.)
- 
- 2. Download and extract PostgreSQL
- 
- 3. Compile and install PostGIS 2.5.5
- 
- 4. Setup postgres user and environment variables
- 
- 5. Configure pg_hba.conf and postgresql.conf
+
+ 1. Install dependencies (gcc, make, libxml2, etc.)   
+ 2. Download and extract PostgreSQL  
+ 3. Compile and install PostGIS 2.5.5  
+ 4. Setup postgres user and environment variables  
+ 5. Configure pg_hba.conf and postgresql.conf  
 
 </details>
 
@@ -106,13 +103,10 @@ Dumps all PostgreSQL databases except the ones listed in an exclusion file or va
 
 We welcome new scripts, improvements, and documentation fixes!
 
- 1. Fork this repo
-
- 2. Add your script in a new folder with a README.md and LICENSE
-
- 3. Ensure consistent formatting and executable permissions
-
- 4. Open a pull request 🚀
+ 1. Fork this repo  
+ 2. Add your script in a new folder with a README.md and LICENSE  
+ 3. Ensure consistent formatting and executable permissions  
+ 4. Open a pull request 🚀  
 
 ---
 
