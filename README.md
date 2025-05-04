@@ -1,43 +1,113 @@
-# 🛠️ Shell Script Suite by Adib Akhtab Faruquee
+# 🐚 shell_script Collection
 
-Welcome to a curated collection of system automation and PostgreSQL tooling scripts, designed and maintained by **Adib Akhtab Faruquee**, Senior System Engineer. These scripts are production-oriented and crafted for reliability, scalability, and observability in Linux environments.
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Bash](https://img.shields.io/badge/shell-bash-1f425f.svg)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
+A growing collection of reliable, production-grade shell scripts to automate server tasks, health checks, database installations, and more. Each module is well-documented, simple to use, and designed with extensibility in mind.
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
+| Script | Description | Key Tools | License |
+|--------|-------------|-----------|---------|
+| [API Health Check](./API-HEALTH-CHECK_SHELL-SCRIPT) | Monitor an API endpoint and send email alerts on failure | `curl`, `mailx` | MIT |
+| [PostgreSQL Installer](./INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5) | Install PostgreSQL 10.x and PostGIS 2.5.5 on AlmaLinux 9.5 | `yum`, `wget`, `tar` | MIT |
+| [PGSQL DB Dump Tool](./PGSQL-DB_DUMP) | Dump all PostgreSQL databases while excluding specific ones | `pg_dump`, `grep` | MIT |
+
+---
+
+## 🚀 Getting Started
+
+### 🧰 Prerequisites
+
+- Linux environment (tested on AlmaLinux 9.5 and Ubuntu)
+- `bash`, `cron`, `mailx`, `postgresql`, and utilities specific to each script
+
+### 📥 Clone the Repo
+
+```bash
+git clone https://github.com/your-username/shell_script.git
+cd shell_script
 ```
-shell_script/
-  ├── API-HEALTH-CHECK_SHELL-SCRIPT/ → Application & API Health Monitoring Script
-  ├── INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5/ → PostgreSQL 10.x + PostGIS 2.5.5 Installer for AlmaLinux 9.5
-  ├── PGSQL-DB_DUMP/ → PostgreSQL Daily Backup Script with EXCLUDE Support (Linux)
+
+▶️ Run a Script
+
+```bash
+cd API-HEALTH-CHECK_SHELL-SCRIPT
+chmod +x API-Health-Check_with_Email-Alert.sh
+./API-Health-Check_with_Email-Alert.sh
 ```
 
----
-
-## 📦 Projects Overview
-
-### 🔍 [API Health Check with Email Alerts](./API-HEALTH-CHECK_SHELL-SCRIPT)
-
-- **Script**: `API-Health-Check_with_Email-Alert.sh`
-- **Purpose**: Monitor web applications and APIs. Sends alert emails if services return non-2xx status or fail to respond.
-- **Docs**: [README.md](./API-HEALTH-CHECK_SHELL-SCRIPT/README.md)
+🔍 Be sure to update configuration variables inside each script before executing.
 
 ---
 
-### 🐘 [PostgreSQL 10 + PostGIS 2.5.5 Installer (AlmaLinux 9.5)](./INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5)
+## 📘 Script Details
 
-- **Script**: `Install_PGSQL-10.xx_and_PosGIS-2.5.5-Almalinux-9.5.sh`
-- **Purpose**: Compiles and installs PostgreSQL, GDAL, PROJ, and PostGIS from source.
-- **Docs**: [README.md](./INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5/README.md)
+💡 API Health Check
+
+Monitors the response from a specified API and sends an email if it's down or returns an unexpected status code.
+
+<details> <summary>🔧 Example Output</summary>
+```bash
+[✓] Checking API endpoint: https://example.com/health
+[✓] Status Code: 200 OK
+[✓] Everything is healthy.
+```
+```bash
+[✗] Status Code: 500 Internal Server Error
+[!] Sending alert email to admin@example.com...
+```
+</details>
 
 ---
 
-### 🗃️ [PostgreSQL Daily Backup Script (with EXCLUDE)](./PGSQL-DB_DUMP)
+## 🛠 PostgreSQL 10.x Installer (AlmaLinux 9.5)
 
-- **Script**: `PGSQL-DB-DUMP_with-EXCLUDE_DB.sh`
-- **Purpose**: Performs daily dumps of all PostgreSQL databases, excluding specific ones. Retention and gzip compression included.
-- **Docs**: [README.md](./PGSQL-DB_DUMP/README.md)
+Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
+
+<details> <summary>📋 Steps Performed</summary>
+1. Install dependencies (gcc, make, libxml2, etc.)
+2. Download and extract PostgreSQL
+3. Compile and install PostGIS 2.5.5
+4. Setup postgres user and environment variables
+5. Configure pg_hba.conf and postgresql.conf
+
+</details>
+
+---
+
+## 💾 PGSQL DB Dump with Exclusions
+
+Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
+
+<details> <summary>📦 Sample Dump Output</summary>
+```bash
+[✓] Skipping database: template1
+[✓] Skipping database: test_db
+[✓] Dumping database: production_db
+[✓] Dump completed: production_db_2025-05-04.sql
+```
+</details>
+
+---
+
+## 🤝 Contribution Guide
+
+We welcome new scripts, improvements, and documentation fixes!
+
+1. Fork this repo
+2. Add your script in a new folder with a README.md and LICENSE
+3. Ensure consistent formatting and executable permissions
+4. Open a pull request 🚀
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See individual folders for their respective LICENSE files.
 
 ---
 
@@ -45,25 +115,7 @@ shell_script/
 
 **Adib Akhtab Faruquee**  
 _Senior System Engineer_  
-_Systems Network & Security Team, Engineering_  
+_Systems Network & Security Team, Engineering_
+_📧 Email: adibakhtab@gmail.com_
+🌐 Visit https://bold.pro/my/adib-akhtab-faruquee-250402002920
 📅 Created: May 2025
-
----
-
-## 📜 License
-
-This repository is licensed under the MIT License. Each script directory includes its own `LICENSE` file.
-
----
-
-## 🧠 Notes
-
-- Each script is standalone and includes its own logging, safety checks, and documentation.
-- Scripts are optimized for **AlmaLinux**, but adaptable to other RHEL-based systems.
-- For security and compliance, review all scripts before deploying in production.
-
----
-
-## 🤝 Contributions
-
-Feel free to fork this repository, submit pull requests, or open issues for improvements or bug fixes. All contributions are welcome!
