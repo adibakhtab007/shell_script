@@ -42,9 +42,9 @@ Ensure PostgreSQL binaries (psql, pg_dump) are in your PATH, or set full paths i
 ---
 
 ## 🧑‍💻 Author
-Adib Akhtab Faruquee
-Senior System Engineer
-Systems Network & Security Team, Engineering
+**Adib Akhtab Faruquee**  
+_Senior System Engineer_  
+_Systems Network & Security Team, Engineering_  
 📅 Created: 04-05-2025
 
 ---
