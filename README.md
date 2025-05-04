@@ -51,6 +51,7 @@ chmod +x API-Health-Check_with_Email-Alert.sh
 Monitors the response from a specified API and sends an email if it's down or returns an unexpected status code.
 
 <details> <summary>🔧 Example Output</summary>
+
 ```bash
 [✓] Checking API endpoint: https://example.com/health
 [✓] Status Code: 200 OK
@@ -60,6 +61,7 @@ Monitors the response from a specified API and sends an email if it's down or re
 [✗] Status Code: 500 Internal Server Error
 [!] Sending alert email to admin@example.com...
 ```
+
 </details>
 
 ---
@@ -69,11 +71,15 @@ Monitors the response from a specified API and sends an email if it's down or re
 Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 
 <details> <summary>📋 Steps Performed</summary>
-1. Install dependencies (gcc, make, libxml2, etc.)
-2. Download and extract PostgreSQL
-3. Compile and install PostGIS 2.5.5
-4. Setup postgres user and environment variables
-5. Configure pg_hba.conf and postgresql.conf
+ 1. Install dependencies (gcc, make, libxml2, etc.)
+ 
+ 2. Download and extract PostgreSQL
+ 
+ 3. Compile and install PostGIS 2.5.5
+ 
+ 4. Setup postgres user and environment variables
+ 
+ 5. Configure pg_hba.conf and postgresql.conf
 
 </details>
 
@@ -84,12 +90,14 @@ Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
 
 <details> <summary>📦 Sample Dump Output</summary>
+
 ```bash
 [✓] Skipping database: template1
 [✓] Skipping database: test_db
 [✓] Dumping database: production_db
 [✓] Dump completed: production_db_2025-05-04.sql
 ```
+
 </details>
 
 ---
@@ -98,10 +106,13 @@ Dumps all PostgreSQL databases except the ones listed in an exclusion file or va
 
 We welcome new scripts, improvements, and documentation fixes!
 
-1. Fork this repo
-2. Add your script in a new folder with a README.md and LICENSE
-3. Ensure consistent formatting and executable permissions
-4. Open a pull request 🚀
+ 1. Fork this repo
+
+ 2. Add your script in a new folder with a README.md and LICENSE
+
+ 3. Ensure consistent formatting and executable permissions
+
+ 4. Open a pull request 🚀
 
 ---
 
@@ -117,5 +128,5 @@ This project is licensed under the MIT License. See individual folders for their
 _Senior System Engineer_  
 _Systems Network & Security Team, Engineering_
 _📧 Email: adibakhtab@gmail.com_
-🌐 Visit https://bold.pro/my/adib-akhtab-faruquee-250402002920
-📅 Created: May 2025
+_🌐 Visit https://bold.pro/my/adib-akhtab-faruquee-250402002920_
+_📅 Created: May 2025_
