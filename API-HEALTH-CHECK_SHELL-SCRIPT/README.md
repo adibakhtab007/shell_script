@@ -1,9 +1,9 @@
 # 🔍 Application & API Health Monitoring Script
 
 [![Shell](https://img.shields.io/badge/Shell-Bash-brightgreen?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yourusername/yourrepo)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/adibakhtab007/shell_script)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/yourusername/yourrepo.svg)](https://github.com/yourusername/yourrepo/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/adibakhtab007/shell_script.svg)](https://github.com/adibakhtab007/shell_script/commits/main)
 [![Cron Job](https://img.shields.io/badge/Cron-Every%205%20min-blue)](https://crontab.guru/#*/5_*_*_*_*)
 
 ---
@@ -39,17 +39,17 @@ ALERT_FILE="/path_1/path_2/PROJECT_NAME_API-Health-Check-Email.log"
 Define your monitored applications:
 
 ```
-	declare -A APPS=(
-		["application-name_1"]="http://xx.xx.xx.xx:yyyy/app_1/"
-		["application-name_2"]="http://xx.xx.xx.xx:yyyy/app_2/"
-	)
+declare -A APPS=(
+	["application-name_1"]="http://xx.xx.xx.xx:yyyy/app_1/"
+	["application-name_2"]="http://xx.xx.xx.xx:yyyy/app_2/"
+)
 ```
 
 And your API list in the script:
 
 ```
-	check_apis "Group 1" \
-		"xx.xx.xx.xx:yyyy:APPLICATION_NAME-10=app_10/api"
+check_apis "Group 1" \
+	"xx.xx.xx.xx:yyyy:APPLICATION_NAME-10=app_10/api"
 ```
 
 🖥️ How It Works
@@ -105,10 +105,10 @@ Senior System Engineer
 ```
 
 🧑‍💻 Author
-Adib Akhtab Faruquee
-Senior System Engineer
-Systems Network & Security Team, Engineering
-📅 Created: 04-05-2025 09:00 AM
+- Adib Akhtab Faruquee
+- Senior System Engineer
+- Systems Network & Security Team, Engineering
+- 📅 Created: 04-05-2025 09:00 AM
 
 📝 License
 Distributed under the MIT License. See LICENSE for more information.
