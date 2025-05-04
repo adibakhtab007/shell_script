@@ -51,14 +51,23 @@ _Systems Network & Security Team, Engineering_
 
 ## 🛠️ Usage
 
--- 📂 Step 1: Make script executable
-```chmod +x PGSQL-DB-DUMP_with-EXCLUDE_DB.sh```
+📂 Step 1: Make script executable
 
--- ▶️ Step 2: Run manually
-```sudo ./PGSQL-DB-DUMP_with-EXCLUDE_DB.sh```
+```
+chmod +x PGSQL-DB-DUMP_with-EXCLUDE_DB.sh
+```
 
--- 🕑 Step 3: Automate via Cron (e.g., 2 AM daily)
-```0 2 * * * /path/to/PGSQL-DB-DUMP_with-EXCLUDE_DB.sh >> /var/log/pgsql_backup_cron.log 2>&1```
+▶️ Step 2: Run manually
+
+```
+sudo ./PGSQL-DB-DUMP_with-EXCLUDE_DB.sh
+```
+
+🕑 Step 3: Automate via Cron (e.g., 2 AM daily)
+
+```
+0 2 * * * /path/to/PGSQL-DB-DUMP_with-EXCLUDE_DB.sh >> /var/log/pgsql_backup_cron.log 2>&1
+```
 
 ---
 
