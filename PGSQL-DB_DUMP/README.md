@@ -32,9 +32,9 @@ It uses `pg_dump` with `gzip` compression and logs each backup process in detail
 Update the script variables to suit your environment:
 
 ```
-RETENTION_DAYS=6                                        # Number of days to keep old backups
-PG_USER="postgres"                                      # PostgreSQL user
-BACKUP_DIR="/path/DB_Postgres/Postgres-DB-Dump"         # Where to store backups
+RETENTION_DAYS=6                                         # Number of days to keep old backups
+PG_USER="postgres"                                       # PostgreSQL user
+BACKUP_DIR="/path/DB_Postgres/Postgres-DB-Dump"          # Where to store backups
 EXCLUDE_DATABASES=("postgres" "test_adib_sys_2" ...)     # Databases to skip
 ```
 Ensure PostgreSQL binaries (psql, pg_dump) are in your PATH, or set full paths in PSQL_PATH and PG_DUMP_PATH.
