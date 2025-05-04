@@ -62,7 +62,7 @@ Logs are written to:
 /var/log/install_postgis.log
 ```
 
-🧱 Directory Structure Used
+## 🧱 Directory Structure Used
 
 ```
 /usr/local/src/                  ← Working directory
@@ -71,7 +71,7 @@ Logs are written to:
 /usr/local/lib                   ← Dynamic library path for PostGIS & GDAL
 ```
 
-📦 Installed Versions
+## 📦 Installed Versions
 | Component  | Version |
 | ---------- | ------- |
 | PostgreSQL | 10.20   |
@@ -79,12 +79,12 @@ Logs are written to:
 | GDAL       | 3.0.4   |
 | PROJ       | 6.3.2   |
 
-🛡️ Safety Features
+## 🛡️ Safety Features
 - Uses set -e, set -u, and pipefail to fail-fast on errors
 - Full log output to /var/log/install_postgis.log
 - Line-specific failure tracing with trap on ERR
 
-🔍 Sample Output
+## 🔍 Sample Output
 
 ```
 [SUCCESS] Installation started at ...
@@ -93,12 +93,12 @@ Logs are written to:
 [INFO] Running: su - postgres -c '/usr/local/pgsql/bin/pg_ctl ...'
 ```
 
-📝 License
+## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for full details.
 
-🤝 Contributions
+## 🤝 Contributions
 Contributions, improvements, and testing on other RHEL-based distros are welcome!
 Please submit a pull request or open an issue to get started.
 
-🚨 Disclaimer
+## 🚨 Disclaimer
 This script assumes a clean AlmaLinux 9.5 environment. Avoid using it on servers with existing PostgreSQL/PostGIS installations to prevent conflicts or overwrites.

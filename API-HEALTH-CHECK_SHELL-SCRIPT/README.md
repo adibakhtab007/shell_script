@@ -52,7 +52,9 @@ check_apis "Group 1" \
 	"xx.xx.xx.xx:yyyy:APPLICATION_NAME-10=app_10/api"
 ```
 
-🖥️ How It Works
+---
+
+##  🖥️ How It Works
 1. Application Check
 Verifies if application URLs return expected HTML content (e.g. Whitelabel Error Page).
 
@@ -70,7 +72,9 @@ Compiles alerts from a temporary log file.
 
 Sends email using mailx and SMTP server.
 
-🛠️ Usage
+---
+
+##  🛠️ Usage
 Make the script executable:
 
 ```
@@ -78,12 +82,16 @@ chmod +x API-Health-Check_with_Email-Alert.sh
 ./API-Health-Check_with_Email-Alert.sh
 ```
 
-📅 Automate with Cron
+---
+
+##  📅 Automate with Cron
 Example cron entry to run every 5 minutes:
 
 ```
 */5 * * * * /path/to/API-Health-Check_with_Email-Alert.sh >> /var/log/health_monitor.log 2>&1
 ```
+
+---
 
 📧 Sample Email Alert
 
@@ -104,20 +112,28 @@ Adib Akhtab Faruquee
 Senior System Engineer
 ```
 
-🧑‍💻 Author
-- Adib Akhtab Faruquee
-- Senior System Engineer
-- Systems Network & Security Team, Engineering
-- 📅 Created: 04-05-2025 09:00 AM
+---
 
-📝 License
+## 🧑‍💻 Author
+
+**Adib Akhtab Faruquee**  
+_Senior System Engineer_  
+_Systems Network & Security Team, Engineering_  
+📅 Created: 04-05-2025
+
+---
+
+##  📝 License
 Distributed under the MIT License. See LICENSE for more information.
 
-🤝 Contributing
+---
+
+##  🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
-📂 Repository Structure
+---
 
+##  📂 Repository Structure
 ```bash
 API-HEALTH-CHECK_SHELL-SCRIPT/
 ├── API-Health-Check_with_Email-Alert.sh   # Main script
