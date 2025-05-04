@@ -6,10 +6,12 @@ Welcome to a curated collection of system automation and PostgreSQL tooling scri
 
 ## 📁 Repository Structure
 
+```
 shell_script/
-├── API-HEALTH-CHECK_SHELL-SCRIPT/ → Application & API Health Monitoring Script
-├── INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5/ → PostgreSQL 10.x + PostGIS 2.5.5 Installer for AlmaLinux 9.5
-├── PGSQL-DB_DUMP/ → PostgreSQL Daily Backup Script with EXCLUDE Support (Linux)
+  ├── API-HEALTH-CHECK_SHELL-SCRIPT/ → Application & API Health Monitoring Script
+  ├── INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5/ → PostgreSQL 10.x + PostGIS 2.5.5 Installer for AlmaLinux 9.5
+  ├── PGSQL-DB_DUMP/ → PostgreSQL Daily Backup Script with EXCLUDE Support (Linux)
+```
 
 ---
 
