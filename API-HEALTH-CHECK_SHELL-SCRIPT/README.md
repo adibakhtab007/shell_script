@@ -121,6 +121,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ```bash
 API-HEALTH-CHECK_SHELL-SCRIPT/
 ├── API-Health-Check_with_Email-Alert.sh   # Main script
-├── README.md                              # Documentation
-└── LICENSE                                # MIT License
+├── LICENSE                                # MIT License
+└── README.md                              # Documentation
 ```
