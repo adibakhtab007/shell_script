@@ -125,3 +125,14 @@ Feel free to fork the repo, submit improvements, or raise issues. All contributi
 
 ## 🚨 Disclaimer
 This script is tested on Linux systems with PostgreSQL running locally. Review and adapt it before deploying in production or on remote DB setups.
+
+---
+
+##  📂 Repository Structure
+```bash
+shell_script
+├── PGSQL-DB_DUMP/
+	├── PGSQL-DB-DUMP_with-EXCLUDE_DB.sh   # Main script
+	├── LICENSE                            # MIT License
+	└── README.md                          # Documentation
+```

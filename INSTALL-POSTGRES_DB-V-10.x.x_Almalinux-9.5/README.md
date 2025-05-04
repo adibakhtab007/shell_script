@@ -62,6 +62,8 @@ Logs are written to:
 /var/log/install_postgis.log
 ```
 
+---
+
 ## 🧱 Directory Structure Used
 
 ```
@@ -71,6 +73,8 @@ Logs are written to:
 /usr/local/lib                   ← Dynamic library path for PostGIS & GDAL
 ```
 
+---
+
 ## 📦 Installed Versions
 | Component  | Version |
 | ---------- | ------- |
@@ -79,10 +83,14 @@ Logs are written to:
 | GDAL       | 3.0.4   |
 | PROJ       | 6.3.2   |
 
+---
+
 ## 🛡️ Safety Features
 - Uses set -e, set -u, and pipefail to fail-fast on errors
 - Full log output to /var/log/install_postgis.log
 - Line-specific failure tracing with trap on ERR
+
+---
 
 ## 🔍 Sample Output
 
@@ -93,12 +101,29 @@ Logs are written to:
 [INFO] Running: su - postgres -c '/usr/local/pgsql/bin/pg_ctl ...'
 ```
 
+---
+
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for full details.
+
+---
 
 ## 🤝 Contributions
 Contributions, improvements, and testing on other RHEL-based distros are welcome!
 Please submit a pull request or open an issue to get started.
 
+---
+
 ## 🚨 Disclaimer
 This script assumes a clean AlmaLinux 9.5 environment. Avoid using it on servers with existing PostgreSQL/PostGIS installations to prevent conflicts or overwrites.
+
+---
+
+##  📂 Repository Structure
+```bash
+shell_script
+├── INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5/
+	├── Install_PGSQL-10.xx_and_PosGIS-2.5.5-Almalinux-9.5.sh   # Main script
+	├── LICENSE                                                 # MIT License
+	└── README.md                                               # Documentation
+```

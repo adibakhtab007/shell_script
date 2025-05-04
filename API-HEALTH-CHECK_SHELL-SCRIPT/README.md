@@ -135,8 +135,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ##  📂 Repository Structure
 ```bash
-API-HEALTH-CHECK_SHELL-SCRIPT/
-├── API-Health-Check_with_Email-Alert.sh   # Main script
-├── LICENSE                                # MIT License
-└── README.md                              # Documentation
+shell_script
+├── API-HEALTH-CHECK_SHELL-SCRIPT/
+	├── API-Health-Check_with_Email-Alert.sh   # Main script
+	├── LICENSE                                # MIT License
+	└── README.md                              # Documentation
 ```
