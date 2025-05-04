@@ -127,6 +127,7 @@ This project is licensed under the MIT License. See individual folders for their
 **Adib Akhtab Faruquee**  
 _Senior System Engineer_  
 _Systems Network & Security Team, Engineering_
-_📧 Email: adibakhtab@gmail.com_
-_🌐 Visit https://bold.pro/my/adib-akhtab-faruquee-250402002920_
-_📅 Created: May 2025_
+📅 Created: May 2025
+
+📧 Email: adibakhtab@gmail.com
+🌐 Visit https://bold.pro/my/adib-akhtab-faruquee-250402002920
