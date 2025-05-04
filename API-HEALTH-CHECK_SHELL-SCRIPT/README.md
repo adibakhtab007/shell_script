@@ -34,18 +34,23 @@ EMAIL_FROM="adib@gmail.com"
 EMAIL_TO="adibakhtab@gmail.com adibakhtab007@gmail.com"
 EMAIL_SUBJECT="⚠️ URGENT: PROJECT_NAME Application Unresponsive"
 ALERT_FILE="/path_1/path_2/PROJECT_NAME_API-Health-Check-Email.log"
+```
 
 Define your monitored applications:
 
+```
 	declare -A APPS=(
 		["application-name_1"]="http://xx.xx.xx.xx:yyyy/app_1/"
 		["application-name_2"]="http://xx.xx.xx.xx:yyyy/app_2/"
 	)
+```
 
 And your API list in the script:
 
+```
 	check_apis "Group 1" \
 		"xx.xx.xx.xx:yyyy:APPLICATION_NAME-10=app_10/api"
+```
 
 🖥️ How It Works
 1. Application Check
@@ -68,22 +73,21 @@ Sends email using mailx and SMTP server.
 🛠️ Usage
 Make the script executable:
 
-bash
-Copy
-Edit
-chmod +x health_monitor.sh
-./health_monitor.sh
+```
+chmod +x API-Health-Check_with_Email-Alert.sh
+./API-Health-Check_with_Email-Alert.sh
+```
+
 📅 Automate with Cron
 Example cron entry to run every 5 minutes:
 
-cron
-Copy
-Edit
+```
 */5 * * * * /path/to/API-Health-Check_with_Email-Alert.sh >> /var/log/health_monitor.log 2>&1
+```
+
 📧 Sample Email Alert
-yaml
-Copy
-Edit
+
+```
 Subject: ⚠️ URGENT: PROJECT_NAME Application Unresponsive
 
 Assalamualaikum Wa Rahmatullah Dear Team,
@@ -98,6 +102,8 @@ Please investigate immediately to restore service availability.
 Best Regards,
 Adib Akhtab Faruquee
 Senior System Engineer
+```
+
 🧑‍💻 Author
 Adib Akhtab Faruquee
 Senior System Engineer
@@ -111,11 +117,10 @@ Distributed under the MIT License. See LICENSE for more information.
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
 📂 Repository Structure
-bash
-Copy
-Edit
 
+```bash
 API-HEALTH-CHECK_SHELL-SCRIPT/
 ├── API-Health-Check_with_Email-Alert.sh   # Main script
 ├── README.md                              # Documentation
 └── LICENSE                                # MIT License
+```
