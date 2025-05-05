@@ -1,5 +1,15 @@
 # MySQL Auto Dump Script
 
+[![Shell](https://img.shields.io/badge/Shell-Bash-brightgreen?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Status](https://img.shields.io/badge/status-stable-success.svg)](https://github.com/adibakhtab007/shell_script)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/adibakhtab007/shell_script.svg)](https://github.com/adibakhtab007/shell_script/commits/main)
+[![Cron Job](https://img.shields.io/badge/Schedule-Daily-blue)](https://crontab.guru/#0_2_*_*_*)
+
+---
+
+## 📌 Overview
+
 This is a Bash script designed to automatically dump all MySQL databases **one by one** while excluding specified databases. It compresses each dump and retains logs, with automatic cleanup of backups older than 6 days.
 
 ---
