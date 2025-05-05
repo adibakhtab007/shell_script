@@ -94,26 +94,6 @@ The file demonstrates:
 
 ---
 
-## 📄 License
-
-This script is distributed under the MIT License. See `LICENSE` file for details.
-
----
-
-## 🤝 Contributions
-
-Pull requests, issues, and suggestions are welcome. Please open an issue to discuss improvements or bugs before submitting a PR.
-
----
-
-## 📧 Contact
-
-Created by **Adib Akhtab Faruquee**  
-Reach out via GitHub for questions or collaboration opportunities.
-
-
----
-
 # 🔥 PostgreSQL User Deletion & Access Revocation Script
 
 This script allows administrators to **delete PostgreSQL users entirely from all databases** or **revoke access from a single database** while ensuring ownership reassignment and data safety.
@@ -229,7 +209,7 @@ Pull requests, issues, and suggestions are welcome for both scripts. Please open
 
 ## 📧 Contact
 
-Created by **Adib Akhtab Faruquee**  
+_**Adib Akhtab Faruquee**_  
 _Senior System Engineer_  
 _Systems Network & Security Team, Engineering_  
 Reach out via GitHub for questions or collaboration opportunities.
