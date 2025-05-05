@@ -1,7 +1,7 @@
 # 🚀 Expand-LVM-Alma_Linux-9.5.sh
 
 ![ShellCheck](https://img.shields.io/badge/ShellCheck-Passed-brightgreen?logo=gnu-bash&style=flat-square)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)(./LICENSE)
 ![Platform](https://img.shields.io/badge/Platform-AlmaLinux%209.5-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=flat-square)
 [![GitHub stars](https://img.shields.io/github/stars/adibakhtab007/shell_script.svg?style=social)](https://github.com/adibakhtab007/shell_script/stargazers)
