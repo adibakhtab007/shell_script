@@ -1,4 +1,4 @@
-# PostgreSQL User Access Management Script
+# 🔥 PostgreSQL User Access Management Script
 
 This Bash script provides an interactive CLI tool to **manage PostgreSQL users** and their **SELECT-level access** to databases, schemas, and tables. It is designed for database administrators and DevOps engineers who need a streamlined way to create new users or assign access to existing users on PostgreSQL servers.
 
@@ -7,8 +7,8 @@ This Bash script provides an interactive CLI tool to **manage PostgreSQL users**
 ## 📜 Script Details
 
 - **Script Name:** `PGSQL-DB-CREATE_NEW_USER_ACCESS_AT_DB-OR-PROVIDE_EXISTING_USER_ACCESS_AT_DB.sh`
-- **Author:** Adib Akhtab Faruquee
-- **Created On:** 04-05-2025 at 09:00 AM
+- **Author:** _Adib Akhtab Faruquee_
+- **Created On:** _04-05-2025 at 09:00 AM_
 - **Supported Environments:** Unix-based systems with PostgreSQL
 - **Required Access:** The script runs with `sudo` privileges under the `postgres` user.
 
@@ -122,9 +122,9 @@ This script allows administrators to **delete PostgreSQL users entirely from all
 
 ## 📜 Script Details
 
-- **Script Name:** `PGSQL-DB-DELETE_USER_OR_REVOKE_DB_ACCESS.sh`
-- **Author:** Adib Akhtab Faruquee
-- **Created On:** 04-05-2025 at 09:00 AM
+- **Script Name:** _`PGSQL-DB-DELETE_USER_OR_REVOKE_DB_ACCESS.sh`_
+- **Author:** _Adib Akhtab Faruquee_
+- **Created On:** _04-05-2025 at 09:00 AM_
 - **Supported Environments:** Unix-based systems with PostgreSQL
 - **Required Access:** The script runs with `sudo` privileges under the `postgres` user.
 
@@ -230,4 +230,6 @@ Pull requests, issues, and suggestions are welcome for both scripts. Please open
 ## 📧 Contact
 
 Created by **Adib Akhtab Faruquee**  
+_Senior System Engineer_  
+_Systems Network & Security Team, Engineering_  
 Reach out via GitHub for questions or collaboration opportunities.
