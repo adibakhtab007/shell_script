@@ -42,6 +42,7 @@ Ensure PostgreSQL binaries (psql, pg_dump) are in your PATH, or set full paths i
 ---
 
 ## 🧑‍💻 Author
+
 **Adib Akhtab Faruquee**  
 _Senior System Engineer_  
 _Systems Network & Security Team, Engineering_  
@@ -72,6 +73,7 @@ sudo ./PGSQL-DB-DUMP_with-EXCLUDE_DB.sh
 ---
 
 ## 📁 Output
+
 - Dump files saved in: $BACKUP_DIR
 - Filename format: database_YYYY-MM-DD.sql.gz
 - Logs saved in: $BACKUP_DIR/backup_log.txt
@@ -79,6 +81,7 @@ sudo ./PGSQL-DB-DUMP_with-EXCLUDE_DB.sh
 ---
 
 ## ❌ Example Excluded Databases
+
 ```
 EXCLUDE_DATABASES=("postgres" "test_adib_sys_2" "template1")
 These databases will be skipped during the backup process.
@@ -87,6 +90,7 @@ These databases will be skipped during the backup process.
 ---
 
 ## 🔍 Sample Log Output
+
 ```
 [INFO] BACKUP PROCESS STARTED AT 04-05-2025 09:00:00 AM
 [INFO] Backing up database: production_db
@@ -99,6 +103,7 @@ These databases will be skipped during the backup process.
 ---
 
 ## 📦 Requirements
+
 - Linux OS with Bash
 - PostgreSQL installed (psql, pg_dump)
 - gzip installed
@@ -107,11 +112,13 @@ These databases will be skipped during the backup process.
 ---
 
 ## 📝 License
+
 This project is licensed under the MIT License. See the LICENSE file for full details.
 
 ---
 
 ## 🧼 Cleanup
+
 Old backup files older than RETENTION_DAYS are automatically deleted:
 
 ```find "$BACKUP_DIR" -type f -name "*.sql.gz" -mtime +$RETENTION_DAYS -exec rm -f {} \;```
@@ -119,16 +126,19 @@ Old backup files older than RETENTION_DAYS are automatically deleted:
 ---
 
 ## 🤝 Contributions
+
 Feel free to fork the repo, submit improvements, or raise issues. All contributions are welcome!
 
 ---
 
 ## 🚨 Disclaimer
+
 This script is tested on Linux systems with PostgreSQL running locally. Review and adapt it before deploying in production or on remote DB setups.
 
 ---
 
 ##  📂 Repository Structure
+
 ```bash
 shell_script
 ├── PGSQL-DB_DUMP/
