@@ -1,5 +1,10 @@
 # 🔥 PostgreSQL User Access Management Script
 
+[![Shell](https://img.shields.io/badge/Shell-Bash-brightgreen?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Status](https://img.shields.io/badge/status-stable-success.svg)](https://github.com/adibakhtab007/shell_script)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/adibakhtab007/shell_script.svg)](https://github.com/adibakhtab007/shell_script/commits/main)
+
 This Bash script provides an interactive CLI tool to **manage PostgreSQL users** and their **SELECT-level access** to databases, schemas, and tables. It is designed for database administrators and DevOps engineers who need a streamlined way to create new users or assign access to existing users on PostgreSQL servers.
 
 ---
