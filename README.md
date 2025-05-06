@@ -87,6 +87,53 @@ Monitors the response from a specified API and sends an email if it's down or re
 
 ---
 
+## 🛠 PGSQL USER ACCESS MANAGEMENT
+
+#### 💡 Manage PostgreSQL users and their access
+
+<details> <summary>📋 Steps Performed</summary>
+
+🟢 Create Superuser
+```bash
+AS YOU HAVE CHOSEN TO CREATE A SUPERUSER, PLEASE PROVIDE THE BELOW INFO.
+USERNAME: admin_adib
+PASSWORD: ********
+
+Creating superuser admin_adib...
+CREATE ROLE
+ALTER ROLE
+
+admin_adib USER CREATED WITH SUPERUSER ACCESS. 
+```
+
+🟢 Delete user
+~~~
+NOW, CHOOSE FROM THE OPTIONS BELOW WHAT YOU WANT TO DO:
+(1). DELETE A USER FROM ALL DATABASES
+(2). DELETE A USER FROM A SINGLE DATABASE
+ENTER YOUR CHOICE (1 or 2): 1
+
+USERNAME LIST: [admin_adib, readonly_rahim, user_mina]
+
+USERNAME: readonly_rahim
+
+Executing deletion in database: app_db
+REASSIGN OWNED
+DROP OWNED
+
+Executing deletion in database: analytics
+REASSIGN OWNED
+DROP OWNED
+
+DROP ROLE
+
+User 'readonly_rahim' has been droped from databases.
+~~~
+
+</details>
+
+---
+
 ## 🛠 Expand-LVM (AlmaLinux 9.5)
 
 #### 💡 Interactive Bash script to safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 systems.
