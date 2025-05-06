@@ -15,6 +15,9 @@ A growing collection of reliable, production-grade shell scripts to automate ser
 | [API Health Check](./API-HEALTH-CHECK_SHELL-SCRIPT) | Monitor an API endpoint and send email alerts on failure | `curl`, `mailx` | MIT |
 | [PostgreSQL Installer](./INSTALL-POSTGRES_DB-V-10.x.x_Almalinux-9.5) | Install PostgreSQL 10.x and PostGIS 2.5.5 on AlmaLinux 9.5 | `yum`, `wget`, `tar` | MIT |
 | [PGSQL DB Dump Tool](./PGSQL-DB_DUMP) | Dump all PostgreSQL databases while excluding specific ones | `pg_dump`, `grep` | MIT |
+| [LVM CONFIGURATION](./CONFIGURE-LVM-DISK_SETTINGS) | Safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 | `yum`, `growpart`, `xfs_growfs`, `lsblk` | MIT |
+| [PGSQL USER ACCESS MANAGEMENT](./CREATE_USER--PROVIDE_ACCESS--DETETE_USER_To_PGSQL-DB) | Manage PostgreSQL users and their SELECT-level access to databases, schemas, and tables | `psql`, `database`, `schema`, `table`, `SELECT`, `DROP`, `REASSIGN OWNED` | MIT |
+| [MYSQL DB Dump Tool](./MYSQL-DB-DUMP) | Dump all MySql databases while excluding specific ones | `mysqldump`, `grep` | MIT |
 
 ---
 
@@ -46,7 +49,7 @@ chmod +x API-Health-Check_with_Email-Alert.sh
 
 ## 📘 Script Details
 
-💡 API Health Check
+# 💡 API Health Check
 
 Monitors the response from a specified API and sends an email if it's down or returns an unexpected status code.
 
@@ -68,15 +71,39 @@ Monitors the response from a specified API and sends an email if it's down or re
 
 ## 🛠 PostgreSQL 10.x Installer (AlmaLinux 9.5)
 
-Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
+💡 Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 
 <details> <summary>📋 Steps Performed</summary>
 
+```bash
  1. Install dependencies (gcc, make, libxml2, etc.)   
  2. Download and extract PostgreSQL  
  3. Compile and install PostGIS 2.5.5  
  4. Setup postgres user and environment variables  
  5. Configure pg_hba.conf and postgresql.conf  
+```
+
+</details>
+
+---
+
+## 🛠 Expand-LVM (AlmaLinux 9.5)
+
+💡 Interactive Bash script to safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 systems.
+
+<details> <summary>📋 Steps Performed</summary>
+
+```bash
+Do you want to modify an LV size? (YES/NO): YES
+Available Logical Volumes:
+1. LV: home in VG: centos
+2. LV: data in VG: centos
+
+Enter the number of the LV you want to modify: 2
+Enter size increase for data (e.g., +20G) or type 'MAX': MAX
+Using all remaining free space for /dev/centos/data...
+Resizing XFS filesystem on /dev/centos/data...
+```
 
 </details>
 
@@ -84,7 +111,7 @@ Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 
 ## 💾 PGSQL DB Dump with Exclusions
 
-Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
+💡 Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
 
 <details> <summary>📦 Sample Dump Output</summary>
 
@@ -93,6 +120,23 @@ Dumps all PostgreSQL databases except the ones listed in an exclusion file or va
 [✓] Skipping database: test_db
 [✓] Dumping database: production_db
 [✓] Dump completed: production_db_2025-05-04.sql
+```
+
+</details>
+
+---
+
+## 💾 MYSQL DB Dump with Exclusions
+
+💡 Dumps all MySql databases except the ones listed in an exclusion file or variable.
+
+<details> <summary>📦 Sample Dump Output</summary>
+
+```bash
+[✓] Skipping database: performance_schema
+[✓] Skipping database: mysql
+[✓] Dumping database: production_db
+[✓] Dump completed: production_db-250506_0040.sql.gz
 ```
 
 </details>
