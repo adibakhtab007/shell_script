@@ -35,7 +35,7 @@ git clone https://github.com/your-username/shell_script.git
 cd shell_script
 ```
 
-▶️ Run a Script
+### ▶️ Run a Script
 
 ```bash
 cd API-HEALTH-CHECK_SHELL-SCRIPT
@@ -47,9 +47,9 @@ chmod +x API-Health-Check_with_Email-Alert.sh
 
 ---
 
-## 📘 Script Details
+## 📘 API Health Check
 
-💡 API Health Check
+### 💡 Monitoring Application's health using API 
 
 Monitors the response from a specified API and sends an email if it's down or returns an unexpected status code.
 
@@ -71,7 +71,7 @@ Monitors the response from a specified API and sends an email if it's down or re
 
 ## 🛠 PostgreSQL 10.x Installer (AlmaLinux 9.5)
 
-💡 Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
+### 💡 Installs PostgreSQL 10.x with PostGIS support and configures it on AlmaLinux.
 
 <details> <summary>📋 Steps Performed</summary>
 
@@ -89,7 +89,7 @@ Monitors the response from a specified API and sends an email if it's down or re
 
 ## 🛠 Expand-LVM (AlmaLinux 9.5)
 
-💡 Interactive Bash script to safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 systems.
+### 💡 Interactive Bash script to safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 systems.
 
 <details> <summary>📋 Steps Performed</summary>
 
@@ -111,7 +111,7 @@ Resizing XFS filesystem on /dev/centos/data...
 
 ## 💾 PGSQL DB Dump with Exclusions
 
-💡 Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
+### 💡 Dumps all PostgreSQL databases except the ones listed in an exclusion file or variable.
 
 <details> <summary>📦 Sample Dump Output</summary>
 
@@ -128,7 +128,7 @@ Resizing XFS filesystem on /dev/centos/data...
 
 ## 💾 MYSQL DB Dump with Exclusions
 
-💡 Dumps all MySql databases except the ones listed in an exclusion file or variable.
+### 💡 Dumps all MySql databases except the ones listed in an exclusion file or variable.
 
 <details> <summary>📦 Sample Dump Output</summary>
 
