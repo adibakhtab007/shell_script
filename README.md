@@ -49,7 +49,7 @@ chmod +x API-Health-Check_with_Email-Alert.sh
 
 ## 📘 Script Details
 
-# 💡 API Health Check
+💡 API Health Check
 
 Monitors the response from a specified API and sends an email if it's down or returns an unexpected status code.
 
