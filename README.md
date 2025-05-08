@@ -91,7 +91,7 @@ Monitors the response from a specified API and sends an email if it's down or re
 
 #### 💡 Manage PostgreSQL users and their access
 
-<details> <summary>📋 Steps Performed</summary>
+<details> <summary>🔧 Example Output</summary>
 
 🟢 Create Superuser
 ```bash
@@ -138,7 +138,7 @@ User 'readonly_rahim' has been droped from databases.
 
 #### 💡 Interactive Bash script to safely and automatically expand Logical Volumes (LVs) on AlmaLinux 9.5 systems.
 
-<details> <summary>📋 Steps Performed</summary>
+<details> <summary>🔧 Example Output</summary>
 
 ```bash
 Do you want to modify an LV size? (YES/NO): YES
